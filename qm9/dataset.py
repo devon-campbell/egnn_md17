@@ -6,8 +6,8 @@ import torch
 
 def retrieve_dataloaders(batch_size, num_workers=1):
     # Initialize dataloader
-    args = init_argparse('qm9')
-    args, datasets, num_species, charge_scale = initialize_datasets(args, args.datadir, 'qm9',
+    args = init_argparse('md17')
+    args, datasets, num_species, charge_scale = initialize_datasets(args, args.datadir, 'md17',
                                                                     subtract_thermo=args.subtract_thermo,
                                                                     force_download=args.force_download
                                                                     )
